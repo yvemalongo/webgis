@@ -6,13 +6,13 @@ var selectedFeature;
 
 var view = new ol.View({
     projection: 'EPSG:4326',
-    center: [82.00, 23.00],
+    center: [22.00, -4.00],
     zoom: 5,
 
 });
 var view_ov = new ol.View({
     projection: 'EPSG:4326',
-    center: [19.98, 42.90],
+    center: [15.98, -4.90],
     zoom: 7,
 });
 
@@ -90,7 +90,7 @@ map.addControl(slider);
 
 var zoom_ex = new ol.control.ZoomToExtent({
     extent: [
-        65.90, 7.48,
+        21.90, -3.48,
         98.96, 40.30
     ]
 });
@@ -958,7 +958,7 @@ function clear_all() {
     if (popup) {
         popup.hide();
     }
-    map.getView().fit([65.90, 7.48, 98.96, 40.30], {
+    map.getView().fit([12.35, -5.96, 12.35, -5.9], {
         duration: 1590,
         size: map.getSize()
     });
